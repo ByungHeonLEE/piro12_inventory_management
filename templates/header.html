@@ -1,0 +1,16 @@
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light"style="background-color: pink; margin-bottom: 15px">
+    <a href="{% url 'list_product' %}"style="color:midnightblue"><i class="fas fa-kiwi-bird fa-2x" style="margin-right:10px"></i></a>
+    <a class="navbar-brand" href="{% url 'list_product' %}">Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse justify-content-end navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="{% url 'reg_product' %}">상품 등록 <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% url 'reg_client' %}">거래처 등록</a>
+      <a class="nav-item nav-link" href="{% url 'list_client' %}">거래처 관리</a>
+    </div>
+  </div>
+</nav>
